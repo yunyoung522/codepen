@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+#header {
+	margin: 0 auto;
+	min-width: 1200px;
+	height: 159px;
+}
+#header .top {
+	min-width: 1200px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f2f2f2;
+}
+#header .top .top_inner {
+	margin: 0 auto;
+	width: 1200px;
+	height: 38px;
+}
+#header .top_inner .sns {
+	float: left;
+}
+#header .top_inner .sns li {
+	float: left;
+	border-left: 1px solid #ccc;
+}
+#header .top_inner .sns li:last-child {
+	border-right: 1px solid #ccc;
+}
+#header .top_right {
+	float: right;
+}
+#header .top_right .zoom {
+	float: left;
+}
+#header .top_right .zoom li {
+	display: inline-block;
+}
+#header .top_right .utils {
+   float: right;
+   margin-left: 5px;
+   margin-top: 3px;
+   font-size: 0px;
+} 
+#header .top_right .utils li {
+	display: inline-block;
+	position: relative;
+}
+#header .top_right .utils li a {
+	font-size: 14px;
+	padding: 0 10px;
+	line-height: 35px;
+}
+#header .top_right .utils li::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 16px;
+	margin-top: 10px;
+	background-color: #cacaca;
+}
+#header .top_right .utils li:first-child::after{
+	display: none;
+}
+#header .menu {
+	margin: 0 auto;
+	height: 80px;
+	border-bottom: 2px solid #d3494f;
+}
+#header .menu_inner{ 
+	margin: 0 auto;
+	width: 1200px;
+	margin-top: 36px;
+}
+#header .menu_inner .logo {
+	float: left;
+}
+#header .menu .menu_right {
+	float:right;
+}
+#gnb {
+	float: left;
+	margin-right: 40px;
+}
+#gnb li {
+	display: inline-block;
+}
+#gnb li a {
+	display: block;
+	padding: 0 20px;
+	line-height: 50px;
+	
+	
+}
+#header .menu_inner .tab {
+	float: right;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	<header id="header">
+		<div class="top">
+			<div class="top_inner">
+				<div class="sns">
+					<ul>
+						<li><a href=""><img src="images/icon_sns1.png" alt="icon_sns1"></a></li>
+						<li><a href=""><img src="images/icon_sns2.png" alt="icon_sns2"></a></li>
+						<li><a href=""><img src="images/icon_sns3.png" alt="icon_sns3"></a></li>
+						<li><a href=""><img src="images/icon_sns4.png" alt="icon_sns4"></a></li>
+						<li><a href=""><img src="images/icon_sns5.png" alt="icon_sns5"></a></li>
+					</ul>
+				</div>
+				<div class="top_right">
+					<div class="zoom">
+						<ul>
+							<li><a href=""><img src="images/icon_zoon_in.png" alt="icon_zoon_in"></a></li>
+							<li><a href=""><img src="images/icon_refresh.png" alt="icon_refresh"></a></li>
+							<li><a href=""><img src="images/icon_zoom_out.png" alt="icon_zoom_out"></a></li>
+						</ul>
+					</div>
+					<div class="utils">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menu_inner">
+				<div class="logo"><h1 id="logo"><a href=""><img src="images/logo.png" alt="logo"></a></h1></div>
+				<div class="menu_right">
+					<nav id="gnb">
+						<ul>
+							<li><a href="">소식ㆍ정보ㆍ소통</a></li>
+							<li><a href="">시행학</a></li>
+							<li><a href="">평생학습형</a></li>
+							<li><a href="">일자리</a></li>
+							<li><a href="">광주시민대학</a></li>
+							<li><a href="">진흥원</a></li>
+						</ul>
+					</nav>
+					<div class="tab">
+						<a href=""><img src="images/tab.png" alt="tab"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+</body>
+</html>
