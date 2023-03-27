@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+.menu {
+	min-width: 1260px;
+	height: 70px;
+	background-color: #0e216d;
+}
+.menu .menu_inner {
+	position: relative;
+	margin: 0 auto;
+	width: 1260px;
+	text-align: center;
+}
+.menu .menu_inner .logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 23px;
+}
+.menu .menu_inner .link {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.menu .menu_inner .link a {
+	display: inline-block;
+	padding: 10px 10px;
+	margin-left: 30px;
+	font-size: 14px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.menu .menu_inner .link .active:hover {
+	color: #0e216d;
+	background-color: #fff;
+}
+#gnb > ul > li {
+	display: inline-block;
+	position: relative;
+	margin-top: 15px;
+}
+#gnb > ul > li > a {
+	display: block;
+	padding: 10px 20px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+}
+#gnb li ul {
+	display: none;
+	position: absolute;
+	left: -25%;
+	width: 150%;
+	background-color: #0e216d;
+}
+#gnb li:hover ul {
+	display: block;
+}
+#gnb li li a {
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+	text-align: left;
+	font-weight: 300;
+	font-size: 12px;
+	color: #fff;
+	border-bottom: 1px solid #404f62;
+}
+#gnb li li:hover a {
+	font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="menu">
+			<div class="menu_inner">
+				<div class="logo"><a href=""><img src="images/logo.png" alt="logo"></a></div>
+			
+			<nav id="gnb">
+				<ul>
+					<li>
+						<a href="">BRAND STORY</a>
+						<ul>
+							<li><a href="">브랜드 소개</a></li>
+							<li><a href="">모델소개</a></li>
+							<li><a href="">파크랜드 AD</a></li>
+				
+						</ul>
+					</li>
+					<li>
+						<a href="">STYLE</a>
+					
+						<ul>
+							<li><a href="">Lookbook</a></li>
+							<li><a href="">Catalog</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">STORE</a>
+						<ul>
+							<li><a href="">매장검색</a></li>
+							<li><a href="">매장개설문의</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">NEWS & EVENT</a>
+						<ul>
+							<li><a href="">News</a></li>
+							<li><a href="">Event</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">COMMUNITY</a>
+						<ul>
+							<li><a href="">신사의 품격</a></li>
+							<li><a href="">패션노하우</a></li>
+							<li><a href="">월페이퍼</a></li>
+							<li><a href="">파크랜드 수트지존 선발대회</a></li>
+							<li><a href="">드림옷장</a></li>
+						</ul>
+					<li>
+						<a href="">C/S CENTER</a>
+						<ul>
+							<li><a href="">멤버스 가입</a></li>
+							<li><a href="">A/S 안내</a></li>
+							<li><a href="">고객상담</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="link">
+					<a href="" class="active">FAMILY BRAND</a>
+					<a href="">ONLINE SHOP</a>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

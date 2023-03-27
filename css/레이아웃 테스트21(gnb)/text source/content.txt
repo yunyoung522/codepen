@@ -1,0 +1,33 @@
+﻿Brand Story
+	브랜드 소개
+	모델소개
+	파크랜드 AD
+
+
+Style
+	Lookbook
+	Catalog
+
+
+Store
+	매장검색
+	매장개설문의
+
+
+News & Event
+	News
+	Event
+
+
+Community
+	신사의 품격
+	패션노하우
+	월페이퍼
+	파크랜드 수트지존 선발대회
+	드림옷장
+
+
+C/S Center
+	멤버스 가입
+	A/S 안내
+	고객상담
