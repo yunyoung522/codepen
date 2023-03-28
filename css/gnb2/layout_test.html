@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+.top {
+	min-width: 1100px;
+	height: 40px;
+	background-color: #f1f1f1;
+}
+.menu {
+	position: absolute;
+	left: 0;
+	top: 41px;
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+	text-align: center;
+	transition: height	0.3s;
+}
+.menu::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 71px;
+	width: 100%;
+	height: 1px;
+	background-color: #dddddd;
+}
+.menu.active {
+	height: 350px;
+}
+.menu nav {
+	margin: 0 auto;
+	width: 1100px;
+}
+.menu nav > ul > li {
+	display: inline-block;
+	position: relative;
+	margin: 0 30px;
+}
+.menu nav > ul > li::after {
+	content: "";
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 2px;
+	width: 100%;
+	height: 3px;
+	background-color: #ff9700;
+}
+.menu nav > ul > li:hover::after {
+	display: block;
+}
+.menu nav > ul > li > a {
+	display: block;
+	padding: 28px 20px;
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #333333;
+}
+.menu nav li ul { /**/
+	position: absolute;
+	padding: 10px 0;
+	width: 150px;
+}
+.menu nav li:nth-child(2) ul {
+	width: 200px;
+}
+.menu nav li:hover ul {
+	display: block;
+}
+.menu nav li li a { /**/
+	display: block;
+	padding: 0 0 0 20px;
+	line-height: 40px;
+	font-size: 15px;
+	color: #5a5a5a;
+	text-align: left;
+}
+.menu nav li li a:hover {
+	color:#ffaf3c;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("nav > ul > li").mouseenter(function(){
+		$(".menu").addClass("active");
+	});
+	$("nav > ul > li").mouseleave(function(){
+		$(".menu").removeClass("active")
+	});
+
+});
+</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="top"></div>
+		<div class="menu">
+			<nav>
+			<ul>
+				<li>
+					<a href="">ECC소개</a>
+					<ul>
+						<li><a href="">교육비전</a></li>
+						<li><a href="">학습시스템</a></li>
+						<li><a href="">교육환경</a></li>
+						<li><a href="">강사정보</a></li>
+						<li><a href="">캠퍼스안내</a></li>
+						<li><a href="">학원개설</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">커리큘럼</a>
+					<ul>
+						<li><a href="">정규프로그램</a></li>
+						<li><a href="">특별프로그램</a></li>
+						<li><a href="">온라인 학습 프로그램</a></li>
+						<li><a href="">독서 프로그램</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">입학안내</a>
+					<ul>
+						<li><a href="">입학절차</a></li>
+						<li><a href="">등록 및 납부</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">ECC소식</a>
+					<ul>
+						<li><a href="">공지사항</a></li>
+						<li><a href="">학사일정</a></li>
+						<li><a href="">ECC 이벤트</a></li>
+						<li><a href="">캠퍼스 MEDIA</a></li>
+						<li><a href="">ECC in PRESS</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">교육정보</a>
+					<ul>
+						<li><a href="">영어교육 NEWS</a></li>
+						<li><a href="">입시 게시판</a></li>
+					</ul>
+				</li>
+			</ul>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
